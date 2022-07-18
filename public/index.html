@@ -3,7 +3,21 @@
   <head>
   </head>
   <body>
+    <script defer>
+      window.watsonAssistantChatOptions = {
+          integrationID: "8b037eeb-b15f-4419-aea7-99bb67ba5d79", // The ID of this integration.
+          region: "dev", // The region your integration is hosted in.
+          serviceInstanceID: "00000000-0000-0000-1657-891514233492", // The ID of your service instance.
+          cloudPrivateHostURL: "https://cpd-cpd-instance.itzroks-662001vacx-8cyyjo-6ccd7f378ae819553d37d5f2ee142bd6-0000.au-syd.containers.appdomain.cloud/assistant/cpd-instance-wa/integrations", // The integration service URL for your provisioned instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://cpd-cpd-instance.itzroks-662001vacx-8cyyjo-6ccd7f378ae819553d37d5f2ee142bd6-0000.au-syd.containers.appdomain.cloud/assistant/cpd-instance-wa/integrations/static/webchat/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+        document.head.appendChild(t);
+      });
+    </script>
     <div id="root"></div>
-    <img src="background.png"/> 
+    <img src="background.png"/>
   </body>
 </html>
