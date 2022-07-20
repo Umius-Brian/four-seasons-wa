@@ -7,8 +7,8 @@ function Home() {
       <img src="background.png"/>
       <Link to='/NPS'>
         <Button
-          size='sm'
-          style={{ position: 'absolute', top: '100px', left: '20px' }}
+          size='lg'
+          style={{ position: 'absolute', top: '25px', right: '20px' }}
           variant='dark'
           className='button'
         >
