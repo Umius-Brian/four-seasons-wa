@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 function ScoreTotals(props) {
   let total = 0;

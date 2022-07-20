@@ -85,6 +85,7 @@ function NPS() {
                 <Row className="pb-0">
                   <h3 className="mb-0">Overall NPS Score</h3>
                 </Row>
+                <br />
                 <Row>
                   <p className="text-nps-score" style={{ color: textColor }}>
                     {score}
@@ -108,11 +109,19 @@ function NPS() {
           <Col md="2"></Col>
           <Col md="4">
             <Row>
-              <Button onClick={getScore}>Fetch latest results!</Button>
-            </Row>
-            <Row>
               <h3>Client Feedback Feed</h3>
             </Row>
+            <Row>
+              <Button 
+                variant='secondary' 
+                size="md" 
+                onClick={getScore} 
+                style={{ width: '12rem', margin: 'auto' }}
+              >
+              Fetch latest results!
+              </Button>
+            </Row>
+            <br />
             <Row>
               {comments.map((comment) => {
                 return <CommentFeed feedback={comment} />;
