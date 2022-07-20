@@ -1,14 +1,14 @@
 .App {
   text-align: center;
   background-color: #000;
-  height: 79px;
+  height: 121px;
 }
 
 .header {
   width: 100%;
   text-align: center;
   background: #000;
-  height: 79px;
+  height: 121px;
 }
 
 body {
@@ -21,12 +21,12 @@ body {
 h1 {
   font-family: Neue Helvetica,helvetica,sans-serif;
   font-weight: 100;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
   text-transform: uppercase;
   position: relative;
   top: 10px;
-  line-height: 2rem;
+  line-height: 3rem;
   letter-spacing: 3px;
 }
 
@@ -34,7 +34,7 @@ h2 {
   /* font-size: 36px !important;
   font-weight: 300 !important; */
   font-family: Neue Helvetica,helvetica,sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
