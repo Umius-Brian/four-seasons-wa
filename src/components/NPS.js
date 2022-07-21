@@ -134,7 +134,7 @@ function NPS() {
       <Link to='/'>
         <Button
           size='lg'
-          style={{ position: 'absolute', top: '100px', right: '280px' }}
+          style={{ position: 'absolute', top: '125px', right: '200px' }}
           variant='dark'
           className='button'
         >
