@@ -8,7 +8,7 @@ function Home() {
       <Link to='/NPS'>
         <Button
           size='lg'
-          style={{ position: 'absolute', top: '65px', right: '300px' }}
+          style={{ position: 'absolute', top: '65px', right: '275px' }}
           variant='dark'
           className='button'
         >
