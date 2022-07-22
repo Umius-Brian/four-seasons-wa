@@ -28,6 +28,16 @@ function NPS() {
     textColor = "#FB4B54";
   }
 
+  function compare(a, b) {
+    if (a.date < b.date) {
+      return 1;
+    } else if (a.date > b.date) {
+      return -1;
+    } else {
+      return 0;
+    }
+  }
+
   async function getScore() {
     let res = await axios.post(
       "https://us-south.functions.appdomain.cloud/api/v1/web/jim.faulkner%40ibm.com_dev/default/hello-world2.json",
@@ -63,6 +73,7 @@ function NPS() {
       { type: "Passives", count: passives, color: "#AA6FFF" },
       { type: "Detractors", count: detractors, color: "#FB4B54" },
     ]);
+    commentArr.sort(compare);
     setComments(commentArr);
   }
 
