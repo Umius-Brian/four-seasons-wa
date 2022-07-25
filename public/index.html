@@ -3,7 +3,7 @@
   <head>
   </head>
   <body>
-    <script defer>
+    <!-- <script defer>
       window.watsonAssistantChatOptions = {
           integrationID: "8b037eeb-b15f-4419-aea7-99bb67ba5d79", // The ID of this integration.
           region: "dev", // The region your integration is hosted in.
@@ -16,6 +16,21 @@
       setTimeout(function(){
         const t=document.createElement('script');
         t.src="https://cpd-cpd-instance.itzroks-662001vacx-8cyyjo-6ccd7f378ae819553d37d5f2ee142bd6-0000.au-syd.containers.appdomain.cloud/assistant/cpd-instance-wa/integrations/static/webchat/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+        document.head.appendChild(t);
+      });
+    </script> -->
+    <script defer>
+      window.watsonAssistantChatOptions = {
+          integrationID: "2752f5fc-e36b-4440-9c46-2f62acf3ce71", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "61e4486a-2d84-472f-9622-bdc164f6f8ed", // The ID of your service instance.
+          onLoad: function(instance) {instance.updateCSSVariables({
+            '$hover-primary': '#0f62fe'
+            }); instance.render()}
+        };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
         document.head.appendChild(t);
       });
     </script>
