@@ -62,7 +62,7 @@ function NPS() {
     });
     setScore(
       ((promoterArr.length * 100 - detractorArr.length * 100) /
-        res.data.message.length).toFixed(2)
+        res.data.message.length).toFixed(0)
     );
 
     setPromoters(promoterArr.length);
