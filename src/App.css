@@ -1,118 +1,271 @@
 .App {
   text-align: center;
-  background-color: #000;
-  height: 132px;
-}
-
-.header {
-  width: 100%;
-  text-align: center;
-  background: #000;
-  height: 132px;
 }
 
 body {
-  /* font-family: 'IBM Plex Sans', sans-serif !important;
-  background-color: #f7f3f2 !important; */
-  font-family: Neue Helvetica,helvetica,sans-serif;
-  background-color: #f7f3f2;
+  font-family: "Work Sans", sans-serif !important;
+  /* color:#f7f3f2 !important; 
+  background-color: #171414 !important; */
+}
+
+/* ScoreComp */
+
+.mission-header {
+  font-size: 27px;
+  font-weight: 200;
+}
+
+.mission-text {
+  font-family: "Bodoni Moda", serif;
+  text-align: left;
+  font-size: 20px;
+}
+
+.wrapper-score-cols {
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.text-nps-score {
+  font-size: 128px !important;
+  font-weight: 600 !important;
+}
+
+.text-score-comp-desc {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.wrapper-comment-feed {
+  border-radius: 4px;
+  margin-top: 12px !important;
+  height: 408px;
+  overflow-y: scroll;
+}
+
+.wrapper-score-comp {
+  margin-top: 60px !important;
 }
 
 h1 {
-  font-family: Neue Helvetica,helvetica,sans-serif;
-  font-weight: 100;
-  font-size: 20px;
-  color: white;
-  text-transform: uppercase;
-  position: relative;
-  top: 10px;
-  line-height: 3rem;
-  letter-spacing: 3px;
+  font-size: 36px !important;
+  font-weight: 200 !important;
+  text-align: left;
 }
 
 h2 {
-  /* font-size: 36px !important;
-  font-weight: 300 !important; */
-  font-family: Neue Helvetica,helvetica,sans-serif;
-  font-size: 24px;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 36px !important;
+  font-weight: 300 !important;
 }
 
 h3 {
-  /* font-size: 24px !important;
-  font-weight: 500 !important */
-  font-family: Neue Helvetica,helvetica,sans-serif;
-  font-weight: 100;
-  font-style: norml;
-  letter-spacing: 3px;
-  font-size: 24px;
-  text-transform: uppercase;
+  font-size: 36px !important;
+  font-weight: 500 !important;
 }
 
 header {
-  border-bottom: 1px solid black;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 48px;
 }
-
-/* CSS */
-
-/* .fetch-button {
-  border-color: transparent;
-  border: none;
-} */
 
 /* app.js */
 
-.text-nps-score {
-  /* font-size: 128px !important;
-  font-weight: 600 !important */
-  font-size: 128px !important;
-  font-weight: 600 !important;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  border-radius: 5px;
-  background-color: #fff;
+.footer-span-nps {
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
-/* .wrapper-nps-section {
-  border: 1px solid black;
+.footer-span-title {
+  font-weight: 600;
+}
+
+.footer-text {
+  font-weight: 300;
+}
+
+.generic-footer {
+  margin-top: 60px !important;
+  background-color: #000;
+  color: #fff;
+}
+
+.wrapper-nps-section {
+  border: 1px solid #f7f3f2;
   border-radius: 4px;
-} */
+  background-color: #272525;
+  height: 368px;
+}
+
+.wrapper-subhead {
+  background-color: #000;
+  color: #fff;
+  border-top: 1px solid #fff;
+}
+
+/* commentfeed.js */
+
+.col-desc {
+  border: 1px solid black;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.date-text {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.feedback-text {
+  font-family: "Bodoni Moda", serif;
+  font-size: 20px;
+}
+.row-feedback {
+  height: 72px;
+  overflow-y: scroll;
+  border: 1px solid #111;
+  margin-top: 24px !important;
+  margin-left: 24px !important;
+  margin-right: 12px !important;
+  border-radius: 4px;
+}
+
+.type-text {
+  color: #fff;
+  font-weight: 300;
+}
+
+/* errorRoute.js */
+
+.error-header {
+  font-size: 27px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.error-text {
+  font-family: "Bodoni Moda", serif;
+  text-align: left;
+  font-size: 20px;
+}
+
+.nps-route {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.nps-route:hover {
+  cursor: pointer;
+  font-weight: 700;
+  transition: font-weight 1s ease-in-out;
+}
+
+.route-text {
+  font-size: 18px;
+  text-align: right;
+  margin-top: 122px;
+}
+
+/* hotelhead.js */
+
+.header-link {
+  font-weight: 500 !important;
+  text-align: left;
+  font-size: 17px !important;
+}
+
+.header-link:hover {
+  cursor: pointer;
+  font-weight: 600 !important;
+}
+
+.header-btn {
+  background-color: #f5f5f5 !important;
+  border: none !important;
+  color: #000 !important;
+  border-radius: 0px !important;
+  margin-top: 12px !important;
+  width: 75% !important;
+  height: 50px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-bottom: 12px !important;
+}
+
+.hotel-head {
+  background-color: #000;
+  color: #fff;
+}
+
+.img-col {
+  border-right: 1px solid #fff;
+}
+
+.img-logo {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* hoteloffers.js */
+
+.details-btn {
+  color: #000 !important;
+  background-color: #fff !important;
+  border: 2px solid #000 !important;
+  border-radius: 2px !important;
+  width: 33% !important;
+  height: 48px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-top: 144px !important;
+}
+.text-featured-offer {
+  font-size: 40px;
+  font-weight: 200;
+  margin-top: 48px !important;
+}
+
+.text-offer-details {
+  font-family: "Bodoni Moda", serif;
+  text-align: left;
+  font-size: 23px;
+}
+
+.text-stay-longer {
+  font-size: 27px;
+  text-align: left;
+  font-weight: 500;
+}
+
+/* hotelsubhead.js */
+
+.text-fixed {
+  margin: 36px 0px 0px 0px !important;
+  font-family: "Bodoni Moda", serif;
+  font-size: 20px;
+  font-style: italic;
+}
+.text-variable {
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 36px;
+}
 
 /* scoretotals.js */
 
 .graph-bar {
   height: 33px;
-  border: 1px solid black;
+  border: 1px solid #111;
 }
 
 .row-graph {
   height: 250px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #f7f3f2;
 }
 
 .wrapper-totals {
-  /* margin-left: 12px !important */
-  margin-left: 12px !important
-}
-
-.button {
-  background: #000;
-  font-family: Neue Helvetica,helvetica,sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  line-height: 1.3333333333em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.button:hover {
-  background: #F0F0F0;
-  color: #000;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  margin-left: 12px !important;
 }

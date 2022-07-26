@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 function ScoreTotals(props) {
   let total = 0;
@@ -15,8 +15,6 @@ function ScoreTotals(props) {
     return b - a;
   });
 
-  console.log("total: ", longestArr);
-
   return (
     <div>
       <Row className="wrapper-totals">
@@ -27,7 +25,6 @@ function ScoreTotals(props) {
           } else {
             length = ((data.count / longestArr[0]) * 100).toString() + "%";
           }
-
           return (
             <Row className="mb-4">
               <Row>
